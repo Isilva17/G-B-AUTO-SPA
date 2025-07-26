@@ -1,70 +1,100 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background: url('../img/Interface2.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    backdrop-filter: brightness(0.5);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G&B Auto Spa® - Estética Automotiva</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('img/Interface3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
 
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
 
-h2 {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2em;
-}
+    .servicos {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
 
-.servicos .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
+    .servico {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
 
-.card {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px #000;
-}
+    .servico img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
 
-.contato, .localizacao {
-    text-align: center;
-    padding: 30px 20px;
-    background: rgba(0, 0, 0, 0.6);
-    margin-top: 20px;
-}
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G&B Auto Spa®</h1>
+    <p>Transformando seu carro com brilho e proteção!</p>
+  </header>
 
-a.whatsapp {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
+  <section class="servicos">
+    <h2>Nossos Serviços</h2>
 
-a.whatsapp:hover {
-    background-color: #128c7e;
-}
+    <div class="servico">
+      <h3>🔧 Polimento Técnico</h3>
+      <p>Remove riscos e realça o brilho natural da pintura com acabamento profissional.</p>
+      <img src="img/polimento1.jpeg" alt="Polimento Técnico">
+    </div>
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    font-size: 0.9em;
-}
+    <div class="servico">
+      <h3>💎 Cristalização</h3>
+      <p>Cria uma película protetora contra sujeira, chuva e raios solares, aumentando o brilho.</p>
+      <img src="img/cristalização_pintura1.jpeg" alt="Cristalização de Pintura">
+    </div>
+
+    <div class="servico">
+      <h3>🔍 Limpeza Interna</h3>
+      <p>Higienização completa de bancos, carpetes, teto e painéis com produtos específicos.</p>
+      <img src="img/limpeza_interna1.jpeg" alt="Limpeza Interna">
+      <img src="img/limpeza_interna2.jpeg" alt="Limpeza Interna 2">
+    </div>
+
+    <div class="servico">
+      <h3>⚙️ Limpeza de Borrachas</h3>
+      <p>Renovação visual das borrachas, plásticos e acabamentos externos, restaurando o preto original.</p>
+      <img src="img/limpeza_borracha1.jpeg" alt="Limpeza de Borrachas">
+    </div>
+
+    <div class="servico">
+      <h3>🧼 Limpeza de Motor</h3>
+      <p>Limpeza profissional do motor sem danificar componentes eletrônicos.</p>
+      <img src="img/limpeza_motor1.jpeg" alt="Limpeza de Motor">
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Localização: Rua Fritz Jacobs, Jardim Arroyo, São José do Rio Preto - SP</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/5517996790107" target="_blank">Fale conosco</a></p>
+  </footer>
+</body>
+</html>
